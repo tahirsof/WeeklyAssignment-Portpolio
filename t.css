@@ -1,0 +1,215 @@
+body {
+    margin: 0px;
+    padding: 0px;
+  }
+  /* ------------------------------------navbar styles-------------------------------------- */
+  .nav ul {
+    background-color: #347355;
+    list-style-type: none;
+    overflow: hidden;
+   
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  li {
+    float: right;
+    font-size: bold;
+  }
+  li a {
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #347355;
+    color: #0a1004;
+    
+  }
+  li a:hover {
+    background-color:#3B8C66;
+    text-decoration: solid;
+    color:#1d5a3d;
+    padding: 15px 17px;
+  }
+  .nav .icon {
+    display: none;
+  }
+  /* ---------------------------------landing page styles------------------------------------------------- */
+  .landing  {
+    text-decoration: none;
+    background-color: #223240;
+    color: #ffffff;
+    width: 100%;
+    /* height: 600px; */
+    text-align: center;
+    padding: 200px;
+    
+  }
+  
+  .landing h1 {
+    font-size: 55px;
+    font-family: Helvetica, sans-serif;
+  }
+  .landing h4 {
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  
+  /* ---------------------------------about part styling---------------------------------------------------- */
+  .about {
+    background-color: #347355;
+    color: #f9f9f9;
+  
+  }
+  .about img {
+    height: 200px; 
+    width: 200px;
+  }
+  #img {
+      padding-left: 310px;
+  }
+  * {
+  box-sizing: border-box;
+  }
+  .column {
+      float: left;
+      width: 50%;
+      padding: 50px;
+      text-align: justify;
+      font-size: 15px;
+  }
+  .about:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  .column a {
+      display: block;
+      background-color: #223240;
+      color:#93D94E;
+      padding: 10px;
+      float: right;
+      text-decoration: none;
+  }
+  .column a:hover {
+      text-decoration: none;
+      display: block;
+      background-color:#93D94E;
+      color:#347355;
+      padding: 12px;
+  }
+  /* ----------------background styling------------------------------------------------------------------------------- */
+  .background {
+      background-color:#223240;
+      color:#fefefe;
+      height: 950px;
+      margin: 0px;
+      padding: 10px;
+  }
+  .background h2 {
+      color:#ffffff;
+      font-size: 25px;
+      border-bottom: 1px solid #3B8C66;
+  }
+  /* -------------------------------contact form styling---------------------------------------------------------------------- */
+  .contact {
+      background-color: #347355;
+      color: white;
+      text-align: center;
+      padding: 50px;
+      font-size: 15px;
+  }
+  
+  input, select {
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 2px solid #3B8C66;
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-color: #347355;
+      font-size: 15px;
+  }
+  
+  .contact a {
+      text-decoration: none;
+      width: 80%;
+      background-color:#223240;
+      color:#ffffff;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      
+  }
+  .contact a:hover {
+      background-color:#3B8C66;
+      color:#347355;
+      text-decoration: none;
+  }
+  .contact h2 {
+    color:#000000;
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  /* --------------footer styling---------------------------------------------------- */
+  .footer {
+      background-color:#347355;
+      color:#ffffff;
+      margin: 0px;
+      padding:5px;
+      text-align: center;
+  }
+  /* ----------------responsive ------------------------------------------------------------- */
+  
+  @media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .column {
+      width: 100%;
+    }
+    .landing {
+      width: 100%;
+      padding: 100px;
+      
+    }
+    .landing h1 {
+      font-size: 35px;
+    }
+    .icon img {
+      height: 35px;
+      width: 35px;
+    }
+    .about img {
+      height: 180px; 
+      width: 180px;
+      
+    }
+    #img {
+      padding-left: 100px;
+    }
+  }
